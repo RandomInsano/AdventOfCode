@@ -13,6 +13,10 @@ fn insert_highest(list: &mut Vec<u32>, new_value: u32, limit: usize) {
         }
     }
 
+    if insert_at >= limit {
+        return
+    }
+
     list.insert(insert_at, new_value);
 
     while list.len() > limit {
