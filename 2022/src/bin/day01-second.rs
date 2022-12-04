@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
 
 mod data;
-use data::DATA;
+use data::DAY1_DATA;
 
 fn insert_highest(list: &mut Vec<u32>, new_value: u32, limit: usize) {
     let mut insert_at = list.len();
@@ -30,7 +30,7 @@ fn main() {
     let total_richest_calories: u32;
     const TOP_LIMIT: usize = 3;
 
-    for line in DATA.split('\n') {
+    for line in DAY1_DATA.split('\n') {
         match line.parse::<u32>() {
             Ok(x) => {
                 current_calories += x;

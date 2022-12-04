@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
 
 mod data;
-use data::DATA;
+use data::DAY1_DATA;
 
 fn main() {
     let mut current_calories = 0;
@@ -10,7 +10,7 @@ fn main() {
     let mut richest_elf_index = 0;
     let mut calorie_high_score = 0;
 
-    for line in DATA.split('\n') {
+    for line in DAY1_DATA.split('\n') {
         match line.parse::<u32>() {
             Ok(x) => {
                 current_calories += x;

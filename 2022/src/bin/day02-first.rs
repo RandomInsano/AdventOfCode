@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
 
 mod data;
-use data::DATA;
+use data::DAY2_DATA;
 
 #[derive(Copy, Clone, PartialEq)]
 enum Choice {
@@ -64,7 +64,7 @@ impl core::fmt::Display for Choice {
 fn main() {
     let mut total = 0;
 
-    for line in DATA.split('\n') {
+    for line in DAY2_DATA.split('\n') {
         let (them, me) = line.split_once(' ').unwrap();
 
         let them = Choice::from(them);
