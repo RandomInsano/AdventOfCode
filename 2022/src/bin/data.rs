@@ -5,6 +5,14 @@ fn main() {
 }
 
 #[allow(dead_code)]
+pub const DAY3_DATA: &'static str = "vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw";
+
+#[allow(dead_code)]
 pub const DAY2_DATA: &'static str = "C Y
 A Z
 B X
